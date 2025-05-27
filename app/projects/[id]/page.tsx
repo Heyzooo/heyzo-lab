@@ -61,8 +61,9 @@ const projects: Record<string, Project> = {
   }
 }
 
-export default function ProjectDetailPage({ params }: { params: { id: string } }) {
-  const project = projects[params.id]
+export default async function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const project = projects[id]
   
   if (!project) {
     notFound()
