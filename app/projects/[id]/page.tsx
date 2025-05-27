@@ -17,6 +17,13 @@ type Project = {
   githubUrl?: string
 }
 
+export async function generateStaticParams() {
+  return [
+    { id: 'happy-timer' },
+    { id: 'mood-tracker' },
+  ]
+}
+
 const projects: Record<string, Project> = {
   'happy-timer': {
     id: 'happy-timer',
