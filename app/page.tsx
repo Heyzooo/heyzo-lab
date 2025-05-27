@@ -8,12 +8,12 @@ export default function Home() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-xl mb-6 animate-fadeIn">
-              あなたの<span className="gradient-text">「やりたい」</span>を<br />
-              現実にする伴走者
+              愚痴で終わるか、<br />
+              <span className="gradient-text">現実を変えるか。</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-              AIの力を借りて、誰もが世界トップレベルのチームを持てる時代。<br />
-              あなたの想いを形にするお手伝いをします。
+              世界中のスペシャリストはもうあなたの手の中にいる。<br />
+              使うか使わないかは、あなた次第。
             </p>
             <div className="flex flex-wrap gap-4 justify-center animate-fadeIn" style={{ animationDelay: '0.4s' }}>
               <Link href="#services" className="btn-primary">
