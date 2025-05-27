@@ -7,7 +7,7 @@ export default function Home() {
         <div className="mb-8 animate-float">
           <span className="text-8xl">✨</span>
         </div>
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent">
           毎日をちょっとハッピーに
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -16,7 +16,7 @@ export default function Home() {
         </p>
         <Link
           href="/projects"
-          className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium hover-float hover:shadow-lg transition-all"
+          className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-400 to-blue-400 text-white rounded-full font-medium hover-float hover:shadow-lg transition-all"
         >
           プロジェクトを見る
           <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

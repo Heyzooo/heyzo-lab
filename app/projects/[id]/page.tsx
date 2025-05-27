@@ -72,7 +72,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
     <div className="container mx-auto px-4 py-16">
       <Link 
         href="/projects" 
-        className="inline-flex items-center text-gray-600 hover:text-primary mb-8 transition-colors"
+        className="inline-flex items-center text-gray-600 hover:text-pink-400 mb-8 transition-colors"
       >
         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -110,7 +110,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
               <ul className="space-y-3">
                 {project.features.map((feature, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
+                    <span className="text-pink-400 mr-3">✓</span>
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -133,7 +133,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
             {project.demoUrl && (
               <a 
                 href={project.demoUrl}
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium hover-float"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-400 to-blue-400 text-white rounded-full font-medium hover-float"
               >
                 デモを見る
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -37,9 +37,6 @@ body {
     text-wrap: balance;
   }
   
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
-  }
   
   .card-shadow {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);

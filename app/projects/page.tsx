@@ -80,7 +80,7 @@ export default function ProjectsPage() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent">
           Projects
         </h1>
         <p className="text-xl text-gray-600">
@@ -93,7 +93,7 @@ export default function ProjectsPage() {
           onClick={() => setSelectedCategory('all')}
           className={`px-6 py-2 rounded-full font-medium transition-all ${
             selectedCategory === 'all' 
-              ? 'bg-gradient-to-r from-primary to-secondary text-white' 
+              ? 'bg-gradient-to-r from-pink-400 to-blue-400 text-white' 
               : 'bg-gray-100 hover:bg-gray-200'
           }`}
         >
@@ -103,7 +103,7 @@ export default function ProjectsPage() {
           onClick={() => setSelectedCategory('tool')}
           className={`px-6 py-2 rounded-full font-medium transition-all ${
             selectedCategory === 'tool' 
-              ? 'bg-gradient-to-r from-primary to-secondary text-white' 
+              ? 'bg-gradient-to-r from-pink-400 to-blue-400 text-white' 
               : 'bg-gray-100 hover:bg-gray-200'
           }`}
         >
@@ -113,7 +113,7 @@ export default function ProjectsPage() {
           onClick={() => setSelectedCategory('app')}
           className={`px-6 py-2 rounded-full font-medium transition-all ${
             selectedCategory === 'app' 
-              ? 'bg-gradient-to-r from-primary to-secondary text-white' 
+              ? 'bg-gradient-to-r from-pink-400 to-blue-400 text-white' 
               : 'bg-gray-100 hover:bg-gray-200'
           }`}
         >
@@ -123,7 +123,7 @@ export default function ProjectsPage() {
           onClick={() => setSelectedCategory('creative')}
           className={`px-6 py-2 rounded-full font-medium transition-all ${
             selectedCategory === 'creative' 
-              ? 'bg-gradient-to-r from-primary to-secondary text-white' 
+              ? 'bg-gradient-to-r from-pink-400 to-blue-400 text-white' 
               : 'bg-gray-100 hover:bg-gray-200'
           }`}
         >
@@ -142,7 +142,7 @@ export default function ProjectsPage() {
               {project.icon}
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-bold mb-2 group-hover:text-pink-400 transition-colors">
                 {project.title}
               </h3>
               <p className="text-gray-600 mb-4">

@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold gradient-text">
+          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent">
             Happy Lab 🌈
           </Link>
 
@@ -30,17 +30,17 @@ export default function Header() {
           <div className={`md:flex md:items-center ${isOpen ? 'block' : 'hidden'} absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none`}>
             <ul className="flex flex-col md:flex-row md:space-x-8 p-4 md:p-0">
               <li>
-                <Link href="/" className="block py-2 px-4 hover:text-primary transition-colors">
+                <Link href="/" className="block py-2 px-4 hover:text-pink-400 transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="block py-2 px-4 hover:text-primary transition-colors">
+                <Link href="/projects" className="block py-2 px-4 hover:text-pink-400 transition-colors">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="block py-2 px-4 hover:text-primary transition-colors">
+                <Link href="/about" className="block py-2 px-4 hover:text-pink-400 transition-colors">
                   About
                 </Link>
               </li>
