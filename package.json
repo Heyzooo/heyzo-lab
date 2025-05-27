@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heyzooo/heyzo-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Heyzooo/heyzo-lab/issues"
+  },
+  "homepage": "https://github.com/Heyzooo/heyzo-lab#readme",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "next": "^15.3.2",
+    "postcss": "^8.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.8.3"
+  }
+}
