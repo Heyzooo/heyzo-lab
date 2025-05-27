@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: '/heyzo-lab',
+  assetPrefix: '/heyzo-lab',
   trailingSlash: true,
   images: {
     unoptimized: true
