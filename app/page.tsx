@@ -126,22 +126,22 @@ export default function Home() {
                 まずは、あなたが本当にやりたいことは何なのかを一緒に探します。
                 漠然とした想いを、具体的な目標に変えていきます。
               </p>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start">
-                  <svg className="w-3.5 h-3.5 text-purple-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="body-small">日常の困りごとの整理</span>
                 </li>
-                <li className="flex items-start">
-                  <svg className="w-3.5 h-3.5 text-purple-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="body-small">人生の夢や目標の明確化</span>
                 </li>
-                <li className="flex items-start">
-                  <svg className="w-3.5 h-3.5 text-purple-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="body-small">実現可能な計画の立案</span>
                 </li>
@@ -159,22 +159,22 @@ export default function Home() {
                 システムが必要な場合は、アプリやWebサイト、ツールを作成します。
                 ご自身で作りたい場合は、その支援も行います。
               </p>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start">
-                  <svg className="w-3.5 h-3.5 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 text-blue-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="body-small">アプリ・Webサイト開発</span>
                 </li>
-                <li className="flex items-start">
-                  <svg className="w-3.5 h-3.5 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 text-blue-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="body-small">業務効率化ツール作成</span>
                 </li>
-                <li className="flex items-start">
-                  <svg className="w-3.5 h-3.5 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 text-blue-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="body-small">開発スキルの習得支援</span>
                 </li>
