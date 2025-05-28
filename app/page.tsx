@@ -4,13 +4,13 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-pattern min-h-screen flex items-center justify-center relative" style={{ background: 'linear-gradient(135deg, #FFF5F5 0%, #E3F2FD 50%, #E8F5E9 100%)' }}>
+      <section className="bg-pattern min-h-screen flex items-center justify-center relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #FFF5F5 0%, #E3F2FD 50%, #E8F5E9 100%)' }}>
         <div className="decoration-dots top-10 right-10"></div>
         <div className="decoration-dots bottom-20 left-20"></div>
         
         <div className="container relative z-10">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
                 <div className="badge mb-4 animate-fadeInUp">AIコンサルティング</div>
                 <h1 className="heading-hero mb-6 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
@@ -22,6 +22,29 @@ export default function Home() {
                   世界中のトップクリエイターたちが、あなたの夢の実現をサポートします。
                   もう「できない」と諦める必要はありません。
                 </p>
+                
+                {/* Trust Indicators */}
+                <div className="flex flex-wrap gap-6 mb-8 animate-fadeInUp" style={{ animationDelay: '0.25s' }}>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm font-medium">相談実績300件以上</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm font-medium">満足度98%</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm font-medium">完全無料相談</span>
+                  </div>
+                </div>
+                
                 <div className="flex flex-col sm:flex-row gap-4 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
                   <Link href="#services" className="btn-primary">
                     今すぐ始める →
@@ -34,19 +57,75 @@ export default function Home() {
               
               <div className="order-1 md:order-2 animate-float">
                 <div className="relative">
-                  <svg viewBox="0 0 400 400" className="w-full h-auto">
-                    {/* AI Robot Illustration */}
-                    <circle cx="200" cy="200" r="150" fill="#E3F2FD" opacity="0.5"/>
-                    <rect x="150" y="120" width="100" height="120" rx="20" fill="#3498DB"/>
-                    <circle cx="175" cy="160" r="15" fill="white"/>
-                    <circle cx="225" cy="160" r="15" fill="white"/>
-                    <rect x="170" y="200" width="60" height="10" rx="5" fill="white"/>
-                    {/* Decorative elements */}
-                    <circle cx="100" cy="100" r="20" fill="#FF6B6B" opacity="0.7"/>
-                    <circle cx="300" cy="120" r="15" fill="#4ECDC4" opacity="0.7"/>
-                    <circle cx="280" cy="280" r="25" fill="#FFE66D" opacity="0.7"/>
-                    <path d="M120 250 Q150 230 180 250" stroke="#9B59B6" strokeWidth="3" fill="none"/>
-                    <path d="M220 250 Q250 270 280 250" stroke="#2ECC71" strokeWidth="3" fill="none"/>
+                  {/* Enhanced Hero Illustration */}
+                  <svg viewBox="0 0 500 500" className="w-full h-auto">
+                    {/* Background circles */}
+                    <circle cx="250" cy="250" r="200" fill="url(#gradient1)" opacity="0.2"/>
+                    <circle cx="250" cy="250" r="150" fill="url(#gradient2)" opacity="0.3"/>
+                    
+                    {/* Main character - friendly AI assistant */}
+                    <g transform="translate(250, 250)">
+                      {/* Body */}
+                      <rect x="-60" y="-40" width="120" height="100" rx="30" fill="#3498DB" />
+                      {/* Screen/Face */}
+                      <rect x="-50" y="-30" width="100" height="60" rx="20" fill="#2C3E50" />
+                      {/* Eyes */}
+                      <circle cx="-20" cy="-5" r="8" fill="#4ECDC4">
+                        <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="20" cy="-5" r="8" fill="#4ECDC4">
+                        <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite" begin="0.5s" />
+                      </circle>
+                      {/* Smile */}
+                      <path d="M -20 10 Q 0 20 20 10" stroke="#4ECDC4" strokeWidth="3" fill="none" strokeLinecap="round" />
+                      {/* Arms */}
+                      <rect x="-80" y="-20" width="20" height="60" rx="10" fill="#3498DB" />
+                      <rect x="60" y="-20" width="20" height="60" rx="10" fill="#3498DB" />
+                      {/* Antenna */}
+                      <line x1="0" y1="-40" x2="0" y2="-60" stroke="#FF6B6B" strokeWidth="3" strokeLinecap="round" />
+                      <circle cx="0" cy="-65" r="8" fill="#FF6B6B">
+                        <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite" />
+                      </circle>
+                    </g>
+                    
+                    {/* Floating elements */}
+                    <g className="animate-float">
+                      <rect x="80" y="100" width="60" height="40" rx="10" fill="#FFE66D" opacity="0.8" />
+                      <text x="110" y="125" textAnchor="middle" fontSize="20" fill="#2C3E50">AI</text>
+                    </g>
+                    
+                    <g className="animate-float" style={{ animationDelay: '1s' }}>
+                      <circle cx="380" cy="150" r="30" fill="#FF6B9D" opacity="0.8" />
+                      <text x="380" y="158" textAnchor="middle" fontSize="16" fill="white">App</text>
+                    </g>
+                    
+                    <g className="animate-float" style={{ animationDelay: '2s' }}>
+                      <polygon points="120,350 150,320 180,350 165,380 135,380" fill="#2ECC71" opacity="0.8" />
+                      <text x="150" y="355" textAnchor="middle" fontSize="14" fill="white">Web</text>
+                    </g>
+                    
+                    {/* Connection lines */}
+                    <path d="M 250 250 L 110 120" stroke="#4ECDC4" strokeWidth="2" opacity="0.3" strokeDasharray="5,5">
+                      <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite" />
+                    </path>
+                    <path d="M 250 250 L 380 150" stroke="#FF6B6B" strokeWidth="2" opacity="0.3" strokeDasharray="5,5">
+                      <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite" />
+                    </path>
+                    <path d="M 250 250 L 150 350" stroke="#9B59B6" strokeWidth="2" opacity="0.3" strokeDasharray="5,5">
+                      <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite" />
+                    </path>
+                    
+                    {/* Gradients */}
+                    <defs>
+                      <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#FF6B6B" />
+                        <stop offset="100%" stopColor="#4ECDC4" />
+                      </linearGradient>
+                      <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#3498DB" />
+                        <stop offset="100%" stopColor="#9B59B6" />
+                      </linearGradient>
+                    </defs>
                   </svg>
                 </div>
               </div>
@@ -56,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="section-padding bg-white">
+      <section id="benefits" className="section-padding bg-white">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="heading-lg mb-4">
@@ -262,7 +341,7 @@ export default function Home() {
       </section>
 
       {/* Case Studies Section */}
-      <section className="section-padding" style={{ background: '#F3E5F5' }}>
+      <section id="cases" className="section-padding" style={{ background: '#F3E5F5' }}>
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="heading-lg mb-4">成功事例</h2>
@@ -329,7 +408,7 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="section-padding bg-white">
+      <section id="process" className="section-padding bg-white">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="heading-lg mb-4">ご利用の流れ</h2>
@@ -376,7 +455,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding" style={{ background: '#E3F2FD' }}>
+      <section id="faq" className="section-padding" style={{ background: '#E3F2FD' }}>
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="heading-lg mb-4">よくあるご質問</h2>

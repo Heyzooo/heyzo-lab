@@ -30,6 +30,12 @@
   --shadow: rgba(0, 0, 0, 0.1);
 }
 
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

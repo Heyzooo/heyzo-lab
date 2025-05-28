@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Happy Portfolio - 毎日をちょっとハッピーに',
-  description: '毎日をちょっとずつハッピーにするツールやアプリを作っています',
+  title: 'heyzo-lab - AIで夢を現実に',
+  description: 'AIの力で、あなたの「やりたい」を現実に。プログラミング不要で、アプリやWebサービスを作成。無料相談実施中。',
 }
 
 export default function RootLayout({
@@ -15,9 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="font-sans antialiased min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-grow">{children}</main>
+      <body>
+        <Navigation />
+        <main className="pt-16">{children}</main>
         <Footer />
       </body>
     </html>
