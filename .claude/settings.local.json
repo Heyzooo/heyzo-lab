@@ -18,7 +18,8 @@
       "Bash(gh api:*)",
       "Bash(gh workflow run:*)",
       "Bash(gh run view:*)",
-      "WebFetch(domain:heyzooo.github.io)"
+      "WebFetch(domain:heyzooo.github.io)",
+      "WebFetch(domain:shin-design.jp)"
     ],
     "deny": []
   }

@@ -4,213 +4,216 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 gradient-mesh"></div>
+      <section className="hero-bg min-h-screen flex items-center justify-center relative">
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Brand Logo */}
-            <div className="inline-flex items-center justify-center mb-8 animate-fadeIn">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 blur-2xl opacity-20"></div>
-                <div className="relative w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center transform rotate-3 hover:rotate-6 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
+            <div className="mb-8">
+              <div className="inline-flex items-center justify-center p-3 bg-white rounded-2xl shadow-sm border border-gray-100 mb-6">
+                <svg className="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h1 className="heading-hero mb-6 animate-fadeIn">
+                愚痴で終わるか、<br />
+                <span className="text-blue-600">現実を変えるか。</span>
+              </h1>
+              <p className="body-large mb-8 animate-fadeIn max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
+                AIの力で、あなたの「やりたい」を現実に。<br />
+                世界トップレベルのスペシャリストが24時間365日待機しています。
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeIn" style={{ animationDelay: '0.4s' }}>
+                <Link href="#services" className="btn-primary">
+                  サービスを見る
+                </Link>
+                <Link href="#contact" className="btn-secondary">
+                  無料相談する
+                </Link>
               </div>
             </div>
-            <h1 className="heading-hero mb-6 animate-fadeIn" style={{ animationDelay: '0.1s' }}>
-              <span className="block text-gray-800">愚痴で終わるか、</span>
-              <span className="gradient-text block mt-2">現実を変えるか。</span>
-            </h1>
-            <p className="body-large text-gray-600 mb-12 animate-fadeIn max-w-2xl mx-auto" style={{ animationDelay: '0.2s' }}>
-              世界中のスペシャリストは、もうあなたの手の中にいる。
-              <span className="block mt-2 font-medium text-gray-700">使うか使わないかは、あなた次第。</span>
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center animate-fadeIn" style={{ animationDelay: '0.4s' }}>
-              <Link href="#services" className="btn-primary">
-                サービスを見る
-              </Link>
-              <Link href="#contact" className="btn-secondary">
-                無料相談する
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fadeIn" style={{ animationDelay: '0.6s' }}>
-          <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center relative">
-            <div className="w-1 h-3 bg-gray-300 rounded-full animate-bounce mt-2"></div>
-            <div className="absolute inset-0 border-2 border-purple-400 rounded-full opacity-50 animate-pulse-soft"></div>
           </div>
         </div>
       </section>
 
-      {/* AI Era Section */}
-      <section className="section-padding bg-gray-50">
+      {/* Features Section */}
+      <section className="section-padding bg-white">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="heading-lg mb-6">
-              AIが変えた、<span className="gradient-text">新しい創造の時代</span>
+          <div className="text-center mb-16">
+            <h2 className="heading-lg mb-4">
+              AIが変えた、新しい創造の時代
             </h2>
-            <p className="body-large text-gray-600">
-              世界トップレベルのデザイナー、エンジニア、マーケッターが
-              <span className="block">あなたの指示を待っています。</span>
+            <p className="body-large max-w-2xl mx-auto">
+              世界トップレベルのデザイナー、エンジニア、マーケッターが<br />
+              あなたの指示を待っています。
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center group animate-fadeIn" style={{ animationDelay: '0.1s' }}>
-              <div className="icon-container-lg mx-auto mb-4 group-hover:bg-purple-50 transition-colors">
-                <svg className="text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+            <div className="card-feature">
+              <div className="icon-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="9" cy="9" r="2"/>
+                  <path d="M21 15l-3.086-3.086a2 2 0 00-2.828 0L6 21"/>
                 </svg>
               </div>
-              <h3 className="font-semibold text-lg mb-2">デザイナー</h3>
-              <p className="body-small text-gray-600">
-                美しいUIやロゴを瞬時に生成
+              <h3 className="heading-sm mb-3">デザイナー</h3>
+              <p className="body-regular">
+                美しいUIやロゴを瞬時に生成。<br />
+                ブランディングから細部まで。
               </p>
             </div>
             
-            <div className="text-center group animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-              <div className="icon-container-lg mx-auto mb-4 group-hover:bg-blue-50 transition-colors">
-                <svg className="text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            <div className="card-feature">
+              <div className="icon-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="16,18 22,12 16,6"/>
+                  <polyline points="8,6 2,12 8,18"/>
                 </svg>
               </div>
-              <h3 className="font-semibold text-lg mb-2">エンジニア</h3>
-              <p className="body-small text-gray-600">
-                アプリやWebサイトを高速開発
+              <h3 className="heading-sm mb-3">エンジニア</h3>
+              <p className="body-regular">
+                アプリやWebサイトを高速開発。<br />
+                最新技術で確実に実現。
               </p>
             </div>
             
-            <div className="text-center group animate-fadeIn" style={{ animationDelay: '0.3s' }}>
-              <div className="icon-container-lg mx-auto mb-4 group-hover:bg-green-50 transition-colors">
-                <svg className="text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+            <div className="card-feature">
+              <div className="icon-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="14"/>
                 </svg>
               </div>
-              <h3 className="font-semibold text-lg mb-2">マーケッター</h3>
-              <p className="body-small text-gray-600">
-                効果的な戦略とコンテンツ作成
+              <h3 className="heading-sm mb-3">マーケッター</h3>
+              <p className="body-regular">
+                効果的な戦略とコンテンツ作成。<br />
+                成果につながる施策を提案。
               </p>
             </div>
           </div>
-          
-          <p className="text-center mt-16 body-large text-gray-700 font-medium">
-            指示があれば、24時間365日、彼らはあなたの力となってくれるでしょう。
-          </p>
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="section-padding">
+      <section id="services" className="section-padding bg-section">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="heading-lg mb-4">
-              <span className="gradient-text">サービス内容</span>
-            </h2>
-            <p className="body-large text-gray-600">
+            <h2 className="heading-lg mb-4">サービス内容</h2>
+            <p className="body-large">
               お悩み相談から問題解決まで、トータルでサポートします
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="card p-8 md:p-10 group">
-              <div className="icon-container mb-6 group-hover:bg-purple-50 transition-colors">
-                <svg className="text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            <div className="card p-8">
+              <div className="icon-container mb-6">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
                 </svg>
               </div>
               <h3 className="heading-md mb-4">想いの深掘り</h3>
-              <p className="body-regular text-gray-600 mb-6">
+              <p className="body-regular mb-6">
                 まずは、あなたが本当にやりたいことは何なのかを一緒に探します。
                 漠然とした想いを、具体的な目標に変えていきます。
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <svg className="w-4 h-4 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="body-small">日常の困りごとの整理</span>
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-4 h-4 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="body-small">人生の夢や目標の明確化</span>
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-4 h-4 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="body-small">実現可能な計画の立案</span>
-                </li>
-              </ul>
+              <div className="space-y-3">
+                <div className="list-item">
+                  <div className="list-check">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                  </div>
+                  <span className="body-regular">日常の困りごとの整理</span>
+                </div>
+                <div className="list-item">
+                  <div className="list-check">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                  </div>
+                  <span className="body-regular">人生の夢や目標の明確化</span>
+                </div>
+                <div className="list-item">
+                  <div className="list-check">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                  </div>
+                  <span className="body-regular">実現可能な計画の立案</span>
+                </div>
+              </div>
             </div>
 
-            <div className="card p-8 md:p-10 group">
-              <div className="icon-container mb-6 group-hover:bg-blue-50 transition-colors">
-                <svg className="text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+            <div className="card p-8">
+              <div className="icon-container mb-6">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
                 </svg>
               </div>
               <h3 className="heading-md mb-4">形にする支援</h3>
-              <p className="body-regular text-gray-600 mb-6">
+              <p className="body-regular mb-6">
                 システムが必要な場合は、アプリやWebサイト、ツールを作成します。
                 ご自身で作りたい場合は、その支援も行います。
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <svg className="w-4 h-4 text-blue-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="body-small">アプリ・Webサイト開発</span>
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-4 h-4 text-blue-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="body-small">業務効率化ツール作成</span>
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-4 h-4 text-blue-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="body-small">開発スキルの習得支援</span>
-                </li>
-              </ul>
+              <div className="space-y-3">
+                <div className="list-item">
+                  <div className="list-check">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                  </div>
+                  <span className="body-regular">アプリ・Webサイト開発</span>
+                </div>
+                <div className="list-item">
+                  <div className="list-check">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                  </div>
+                  <span className="body-regular">業務効率化ツール作成</span>
+                </div>
+                <div className="list-item">
+                  <div className="list-check">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                  </div>
+                  <span className="body-regular">開発スキルの習得支援</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Case Study Section */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-white">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="heading-lg mb-4">
-              <span className="gradient-text">実績</span>
-            </h2>
-            <p className="body-large text-gray-600">
+            <h2 className="heading-lg mb-4">実績</h2>
+            <p className="body-large">
               実際に問題を解決した事例
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="card p-8 md:p-12 shadow-soft">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="icon-container-lg flex-shrink-0">
-                  <svg className="text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div className="card p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-start gap-8">
+                <div className="icon-container flex-shrink-0">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12,6 12,12 16,14"/>
                   </svg>
                 </div>
-                <div className="flex-1 text-center md:text-left">
+                <div className="flex-1">
                   <h3 className="heading-md mb-4">朝ヨガアラームアプリ</h3>
-                  <p className="body-regular text-gray-600 mb-6">
+                  <p className="body-regular mb-6">
                     「朝起きたときにヨガをやりたいので、時間になったらYouTube動画を再生するアラームアプリを作ってほしい」
                   </p>
-                  <div className="bg-purple-50 border-l-4 border-purple-500 p-4 mb-6">
-                    <p className="body-small text-gray-700">
+                  <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+                    <p className="body-regular text-gray-700">
                       <strong>結果：</strong>アプリ開発は未経験でしたが、約1週間でアプリを完成。
                       コードは1行も書かずに実現しました。
                     </p>
@@ -227,47 +230,39 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section id="process" className="section-padding">
+      <section className="section-padding bg-section">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="heading-lg mb-4">
-              <span className="gradient-text">プロセス</span>
-            </h2>
-            <p className="body-large text-gray-600">
+            <h2 className="heading-lg mb-4">プロセス</h2>
+            <p className="body-large">
               あなたの想いを形にする3つのステップ
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
-            <div className="text-center group">
-              <div className="process-step mx-auto mb-6 group-hover:scale-110">
-                1
-              </div>
-              <h3 className="font-semibold text-lg mb-3">ヒアリング</h3>
-              <p className="body-small text-gray-600">
-                あなたの想いや課題を
+            <div className="text-center">
+              <div className="step-indicator">1</div>
+              <h3 className="heading-sm mb-3">ヒアリング</h3>
+              <p className="body-regular">
+                あなたの想いや課題を<br />
                 じっくりお聞きします
               </p>
             </div>
 
-            <div className="text-center group">
-              <div className="process-step mx-auto mb-6 group-hover:scale-110">
-                2
-              </div>
-              <h3 className="font-semibold text-lg mb-3">プランニング</h3>
-              <p className="body-small text-gray-600">
-                最適な解決方法を
+            <div className="text-center">
+              <div className="step-indicator">2</div>
+              <h3 className="heading-sm mb-3">プランニング</h3>
+              <p className="body-regular">
+                最適な解決方法を<br />
                 一緒に考えます
               </p>
             </div>
 
-            <div className="text-center group">
-              <div className="process-step mx-auto mb-6 group-hover:scale-110">
-                3
-              </div>
-              <h3 className="font-semibold text-lg mb-3">実現</h3>
-              <p className="body-small text-gray-600">
-                AIの力を活用して
+            <div className="text-center">
+              <div className="step-indicator">3</div>
+              <h3 className="heading-sm mb-3">実現</h3>
+              <p className="body-regular">
+                AIの力を活用して<br />
                 スピーディーに形にします
               </p>
             </div>
@@ -276,26 +271,26 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="section-padding gradient-primary text-white">
+      <section id="contact" className="section-padding bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="heading-lg mb-6">
               まずは無料相談から
             </h2>
-            <p className="body-large mb-10 opacity-90">
-              あなたの「やりたい」を聞かせてください。
-              <span className="block mt-2">一緒に最適な解決方法を見つけましょう。</span>
+            <p className="body-large mb-10">
+              あなたの「やりたい」を聞かせてください。<br />
+              一緒に最適な解決方法を見つけましょう。
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="mailto:hello@example.com" 
-                className="bg-white text-gray-900 px-8 py-3 rounded-xl font-medium hover:shadow-lg transition-all hover:-translate-y-1"
+                href="mailto:hello@heyzo-lab.com" 
+                className="btn-primary"
               >
                 メールで相談する
               </a>
               <a 
                 href="#" 
-                className="bg-transparent text-white border-2 border-white/30 backdrop-blur-sm px-8 py-3 rounded-xl font-medium hover:bg-white/10 hover:border-white/50 transition-all"
+                className="btn-outline"
               >
                 LINEで相談する
               </a>
