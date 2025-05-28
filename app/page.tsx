@@ -23,29 +23,7 @@ export default function Home() {
                   もう「できない」と諦める必要はありません。
                 </p>
                 
-                {/* Trust Indicators */}
-                <div className="flex flex-wrap gap-6 mb-8 animate-fadeInUp" style={{ animationDelay: '0.25s' }}>
-                  <div className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-sm font-medium">相談実績300件以上</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-sm font-medium">満足度98%</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-sm font-medium">完全無料相談</span>
-                  </div>
-                </div>
-                
-                <div className="flex flex-col sm:flex-row gap-4 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
+                <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
                   <Link href="#services" className="btn-primary">
                     今すぐ始める →
                   </Link>
